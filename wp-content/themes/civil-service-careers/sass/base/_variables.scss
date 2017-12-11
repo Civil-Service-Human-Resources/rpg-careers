@@ -1,0 +1,20 @@
+$base-color: #000;
+
+$primary-color: $civil-service;
+
+// masthead
+$masthead-bg: $primary-color;
+$masthead-space-bg: lighten($primary-color, 54%);
+$masthead-color: #FFF;
+$masthead-link-color: #FFF;
+$masthead-line-color: lighten($primary-color, 15%);
+
+
+// footer
+$footer-bg: $grey-3;
+$footer-border-color: $primary-color;
+
+// search component
+$search-border-color: $primary-color;
+$search-label-color: $primary-color;
+$search-label-explainer-color: $base-color;

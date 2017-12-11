@@ -1,0 +1,35 @@
+.component-banner {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    position: relative;
+
+    &:after {
+        background-color: $primary-color;
+        content: '';
+        height: 100%;
+        left: 0;
+        opacity: .9;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    @include media(tablet) {
+        padding: 60px;
+    }
+    
+    &__heading {
+        @include bold-48;
+        color: #FFF;
+        line-height: 1.5;
+        position: relative;
+        z-index: 10;
+
+        @include media(tablet) {
+            width: 65%;
+        }
+    }
+}

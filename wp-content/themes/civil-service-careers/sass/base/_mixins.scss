@@ -1,0 +1,6 @@
+@mixin focus-state($offset: 0) {
+    &:focus {
+        outline: 3px solid #ffbf47;
+        outline-offset: $offset;
+    }
+}

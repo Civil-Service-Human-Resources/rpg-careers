@@ -1,0 +1,10 @@
+input[type=text],
+input[type=password],
+input[type=number] {
+    @include focus-state;
+}
+
+button,
+input[type=submit] {
+    @include focus-state;
+}

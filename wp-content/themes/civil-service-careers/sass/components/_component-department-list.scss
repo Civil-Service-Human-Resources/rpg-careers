@@ -1,0 +1,19 @@
+.component-departments {
+    &__heading {
+        color: #000;
+    }
+
+    &__list {
+        @extend %grid-row;
+    }
+
+    &__list-item {
+        @include grid-column(1/3);
+        margin-bottom: 20px;
+    }
+
+    &__list-item-name {
+        @include bold-24;
+        margin-bottom: 10px;
+    }
+}

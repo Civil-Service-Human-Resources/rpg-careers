@@ -1,0 +1,44 @@
+.masthead {
+    @extend %contain-floats;
+    background-color: $masthead-bg;
+
+    a {
+        color: $masthead-link-color;
+        text-decoration: none;
+        
+    }
+
+    &__first {
+        @extend %contain-floats;
+        border-bottom: 1px solid $masthead-line-color;
+        padding: 10px 0;
+
+        a {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__inner {
+        @extend %site-width-container;
+    }
+
+    &__logo {
+        float: left;
+    }
+
+    &__account-nav {
+        float: right;
+
+        li {
+            @include inline-block;
+            border-right: 1px solid $masthead-line-color;
+            padding: 0 9px 0 5px;
+
+            &:last-child {
+                border: 0;
+            }
+        }
+    }
+}

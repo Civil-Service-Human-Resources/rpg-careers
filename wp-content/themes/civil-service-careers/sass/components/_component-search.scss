@@ -1,0 +1,65 @@
+.component-search {
+    border-bottom: 1px solid $search-border-color;
+    margin-bottom: 50px;
+    padding: 15px 0;
+
+    &__form {
+        @extend %grid-row;
+    }
+
+    &__label {
+        @include grid-column(1/2);
+        @include core-19;
+        color: $search-label-color;
+        display: block;
+        margin-bottom: 10px;
+
+        @include media(tablet) {
+            margin-bottom: 0;
+        }
+
+        &--explainer {
+            color: $search-label-explainer-color;
+        }
+    }
+
+    &__box {
+        @include grid-column(1/2);
+    }
+
+    &__input {
+        border: 3px solid $search-border-color;
+        padding-right: 63px;
+        position: relative;
+
+        input {
+            border: 0;
+            border-radius: 0;
+            box-sizing: border-box;
+            display: block;
+            font-size: 19px;
+            line-height: 40px;
+            margin: 0;
+            padding: 0 15px;
+            width: 100%;
+        }
+
+        button {
+            background-color: $search-border-color;
+            border: 0;
+            border-radius: 0;
+            color: #FFF;
+            cursor: pointer;
+            font-size: 19px;
+            height: 40px;
+            line-height: 40px;
+            margin: 0;
+            padding: 0 15px;
+            position: absolute;
+            right: 0;
+            text-align: center;
+            top: 0;
+            width: 60px;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "civil-service-careers",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "govuk_frontend_toolkit": "^7.2.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cli": "^1.4.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1"
+  }
+}

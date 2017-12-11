@@ -1,0 +1,16 @@
+.footer {
+    background-color: $footer-bg;
+    border-top: 10px solid $footer-border-color;
+    clear: both;
+    position: relative;
+
+    &:after {
+        color: darken($footer-bg, 15%);
+        content: 'FOOTER CONTENT TBC';
+        display: block;
+        font-size: 55px;
+        font-weight: bold;
+        padding: 120px 0;
+        text-align: center;
+    }
+}

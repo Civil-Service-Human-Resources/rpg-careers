@@ -1,0 +1,51 @@
+.navigation {
+    clear: both;
+
+    ul {
+        margin: 0 -15px;
+
+        @include media(tablet) {
+            margin: 0 -2%;
+        }
+    }
+
+    li {
+        @include core-16;
+
+        @include media(tablet) {
+            @include inline-block;
+            margin: 0 2%;
+        }
+
+        &.current-menu-item,
+        &.current-page-ancestor {
+            a {
+                background-color: $masthead-line-color;
+                
+                @include media(tablet) {
+                    @include bold-16;
+                    background-color: transparent;
+                    border-color: $masthead-link-color;
+                }
+            }
+        }
+    }
+
+    a {
+        @include focus-state(-2px);
+        border-bottom: 1px solid $masthead-line-color;
+        display: block;
+        padding: 15px;
+
+        @include media(tablet) {
+            border-bottom: 5px solid transparent;
+            padding: 13px 0 7px;
+        }
+
+        &:hover {
+            @include media(tablet) {
+                border-color: $masthead-line-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.content {
+    clear: both;
+
+    &__inner {
+        @extend %site-width-container;
+        padding-top: 100px;
+    }
+}
