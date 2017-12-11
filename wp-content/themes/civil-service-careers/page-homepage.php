@@ -8,7 +8,7 @@ get_header(); ?>
 	<div class="page-homepage">
 		<?php while ( have_posts() ) : the_post(); ?>
 
-		<h1><?php the_title(); ?></h1>
+		<h1 class="heading-xlarge"><?php the_title(); ?></h1>
 
 		<?php 
 			// VIDEO COMPONENT

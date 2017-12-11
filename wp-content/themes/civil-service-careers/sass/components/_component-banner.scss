@@ -22,9 +22,8 @@
     }
     
     &__heading {
-        @include bold-48;
         color: #FFF;
-        line-height: 1.5;
+        margin: 0;
         position: relative;
         z-index: 10;
 

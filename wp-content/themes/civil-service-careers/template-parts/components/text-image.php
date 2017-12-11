@@ -1,6 +1,6 @@
 <!-- text image component -->
 <div class="component-textimage">
-    <h2><?php echo $data['heading'] ?></h2>
+    <h2 class="heading-large"><?php echo $data['heading'] ?></h2>
     <div class="component-textimage__content">
         <div class="component-textimage__image">
             <?php
@@ -13,9 +13,7 @@
             ?>
         </div>
         <div class="component-textimage__text">
-            <div class="intro-text">
-                <?php echo $data['intro'] ?>
-            </div>
+            <p class="lede"><?php echo $data['intro'] ?></p>
             <?php echo $data['content'] ?>
         </div>
     </div>

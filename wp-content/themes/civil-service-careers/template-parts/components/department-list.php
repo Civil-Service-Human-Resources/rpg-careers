@@ -1,9 +1,7 @@
 <!-- department list component -->
 <div class="component-departments">
-    <h2 class="component-departments__heading"><?php echo $data['heading'] ?></h2>
-    <div class="intro-text">
-        <p class="intro-text"><?php echo $data['intro'] ?></p>
-    </div>
+    <h2 class="heading-large"><?php echo $data['heading'] ?></h2>
+    <p class="lede"><?php echo $data['intro'] ?></p>
     <ul class="component-departments__list">
         <?php foreach($data['departments'] as $key => $dept): ?>
             <li class="component-departments__list-item">
